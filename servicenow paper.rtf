@@ -1,0 +1,204 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Bodoni MT Black;}{\f2\fnil\fcharset0 Broadway;}{\f3\fnil\fcharset0 Berlin Sans FB;}{\f4\fnil\fcharset2 Symbol;}}
+{\*\listtable 
+{\list\listhybrid
+{\listlevel\levelnfc23\leveljc0\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f4\jclisttab\tx0}
+{\listlevel\levelnfc0\leveljc0\levelstartat1{\leveltext\'02\'01.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc4\leveljc0\levelstartat1{\leveltext\'02\'02.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc3\leveljc0\levelstartat1{\leveltext\'02\'03.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc2\leveljc0\levelstartat1{\leveltext\'02\'04.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc1\leveljc0\levelstartat1{\leveltext\'02\'05.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc0\leveljc0\levelstartat1{\leveltext\'02\'06.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc4\leveljc0\levelstartat1{\leveltext\'02\'07.;}{\levelnumbers\'01;}\jclisttab\tx0}
+{\listlevel\levelnfc23\leveljc1\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f4\jclisttab\tx0}\listid1 }}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9     \par
+            \b\f1\fs44 TAILORED APPLICATION ACCESS FOR ENHANCED USER       EXPERIENCE\par
+\b0\f0\fs22  \f2\fs36 Project Overview: \f0\fs22\par
+                Developing a Custom IT Service Management (ITSM) Application\par
+Let\rquote s assume you want to create a Custom ITSM Application in your ServiceNow Developer Instance. This application might include custom workflows, tables, forms, integrations, and business rules to manage IT service requests, incidents, changes, and more.\par
+  \f2\fs36 Objectives:\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li720\sa200\sl276\slmult1  \f0\fs22 Personalized User Access: Provide users with role-specific access to the features and data they need, streamlining their tasks and improving security.\par
+{\listtext\f0 1\tab}Simplified and Dynamic UI: Tailor the user interface to make it intuitive, relevant, and easy to navigate.\par
+{\listtext\f0 2\tab}Contextual Data and Actions: Display only relevant data and actionable items, improving focus and reducing distractions.\par
+{\listtext\f0 3\tab}Granular Security and Compliance: Ensure that sensitive data is protected and that users only access information necessary for their role.\par
+{\listtext\f0 4\tab}Enhanced Collaboration: Streamline communication and collaboration across different roles and teams.\par
+{\listtext\f0 5\tab}Timely Notifications: Provide real-time, role-based notifications and alerts to keep users informed and help them act quickly.\par
+{\listtext\f0 6\tab}Efficient Task Routing: Automatically assign and escalate tasks based on role-specific criteria to ensure tasks are completed efficiently.\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\ilvl8\fi-360\li720\sa200\sl276\slmult1 Role-Specific Onboarding: Offer tailored training and resources to help users understand and use the platform effectively.\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\ls1\fi-360\li720\sa200\sl276\slmult1 Mobile Optimization: Deliver a mobile-optimized experience that allows users to manage tasks and receive alerts while on the go.\par
+
+\pard\sa200\sl276\slmult1\f2\fs36 Keyfeatures and Concepts utilized\par
+  \f0\fs22 1. Role-Based Access Control (RBAC)\par
+                   This feature allows administrators to define specific roles in ServiceNow and assign appropriate permissions to users based on their roles.\par
+  2. Access Control Rules (ACLs)\par
+                   ACLs define the permissions at the table, record, and field level in ServiceNow. They determine what users can view, create, update, or delete.\par
+3. UI Policies and UI Actions\par
+                 UI Policies and UI Actions help customize the user interface by dynamically altering forms, fields, and buttons based on specific conditions.\par
+4. Personalized Dashboards and Widgets\par
+             Dashboards in ServiceNow can be tailored to display the most relevant information, metrics, and KPIs specific to the user\rquote s role and responsibilities.\par
+5. Contextual Menus and Actions\par
+             ServiceNow allows for context-sensitive menus and actions to be presented to users based on the task they are working on.\par
+6. Mobile Access and Mobile-Optimized Interfaces\par
+            ServiceNow provides mobile-optimized experiences that ensure users can complete their tasks from anywhere, with an interface tailored for mobile use.\par
+7.Service Desk and Incident Management\par
+           Tailor incident management processes and access for Service Desk agents, managers, and users.\par
+8. Change Management\par
+           Change Management applications can be tailored to ensure that the right people have access to change requests and approvals.\par
+\f2\fs36 Detailed steps to solution\f0\fs22\par
+\f3 1. Define User Roles and Responsibilities\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\f0 Step 1: Identify all user roles within your organization and define their responsibilities in ServiceNow.\par
+{\pntext\f4\'B7\tab}Solution: Establish roles such as Service Desk Agent, Incident Manager, Change Approver, End User, etc. Each role will have specific access needs based on their job functions. Consider the following:\par
+{\pntext\f4\'B7\tab}What modules should they access?\par
+{\pntext\f4\'B7\tab}Best Practice: Keep roles simple and modular to avoid conflicts and ensure scalability.\par
+
+\pard\sa200\sl276\slmult1\f3 2. Implement Role-Based Access Control (RBAC)\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\f0 Step 2: Assign specific roles to users based on their job responsibilities.\par
+
+\pard\sa200\sl276\slmult1 Solution:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Go to User Administration > Roles in ServiceNow.\par
+{\pntext\f4\'B7\tab}Create custom roles if needed or use predefined roles.\par
+{\pntext\f4\'B7\tab}Assign roles to users by navigating to User Administration > Users, selecting the user, and associating the correct roles with them.\par
+{\pntext\f4\'B7\tab}Best Practice: Assign only the roles necessary for users to perform their tasks to minimize security risks.\par
+
+\pard\sa200\sl276\slmult1\f3 3. Configure Access Control Rules \par
+\f0 Step 3: Set up Access Control Lists (ACLs) to control who can access certain tables, records, and fields.\par
+Solution:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Table-Level ACLs: Determine which users or roles can access specific tables (e.g., Incident, Change Request, HR cases).\par
+{\pntext\f4\'B7\tab}Field-Level ACLs: Limit access to sensitive fields, ensuring that only authorized roles can view or modify specific data within a record.\par
+{\pntext\f4\'B7\tab}Record-Level ACLs: Control access to individual records based on criteria (e.g., the owner of an incident can edit it, while others can only view it).\par
+{\pntext\f4\'B7\tab}Navigate to System Security > Access Control (ACL) to create and manage ACLs for different resources.\par
+{\pntext\f4\'B7\tab}Best Practice: Use ACLs to enforce security and ensure that users only access the data they need for their role.\par
+
+\pard\sa200\sl276\slmult1\f3 4. Create UI Policies for Dynamic Forms\par
+\f0 Step 4: Use UI Policies to dynamically adjust form behavior based on user role, task status, or other conditions.\par
+Solution:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Set conditions to show, hide, or make fields mandatory based on the user's role or the state of the record.\par
+{\pntext\f4\'B7\tab}For example, for an Incident Management form, show additional fields only when the incident is escalated, or when the user is a Service Desk Manager.\par
+{\pntext\f4\'B7\tab}Navigate to System UI > UI Policies to create and configure these rules.\par
+{\pntext\f4\'B7\tab}Best Practice: Avoid cluttering forms with irrelevant fields. Customize forms to simplify user workflows.\par
+
+\pard\sa200\sl276\slmult1\f3 5. Set Up UI Actions for Role-Specific Actions\par
+\f0 Step 5: Use UI Actions to tailor the actions available to users on specific records.\par
+Solution:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Create buttons, links, or context menus that appear only for specific roles or conditions. For instance, a Change Manager might have the option to approve a change request, while a Change Implementer can only execute tasks related to the change.\par
+{\pntext\f4\'B7\tab}Navigate to System UI > UI Actions to configure these actions.\par
+{\pntext\f4\'B7\tab}Best Practice: Keep the user interface clean by only showing actions that are relevant to the user\rquote s role and the record's state.\par
+
+\pard\sa200\sl276\slmult1\f3 6. Build Personalized Dashboards and Reports\par
+\f0 Step 6: Tailor dashboards and reports to show only relevant information based on the user\rquote s role.\par
+Solution:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Use Performance Analytics and Reports to create real-time dashboards tailored to the user's role and needs.\par
+{\pntext\f4\'B7\tab}For example:\par
+{\pntext\f4\'B7\tab}A Service Desk Agent might see a dashboard with a list of their open incidents and their SLA status.\par
+{\pntext\f4\'B7\tab}A Manager might see a broader overview of incident trends, SLA performance, and team metrics.\par
+{\pntext\f4\'B7\tab}Navigate to Performance Analytics > Dashboards to configure and personalize user dashboards.\par
+{\pntext\f4\'B7\tab}Best Practice: Provide users with actionable insights that are relevant to their role to enhance productivity.\par
+
+\pard\sa200\sl276\slmult1\f3 7. Configure Self-Service Portal for Tailored Access\par
+\f0 Step 7: Use the Self-Service Portal to provide users with access to only the services and information they need.\par
+Solution:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Customize the portal based on user roles. For example:\par
+{\pntext\f4\'B7\tab}End Users can submit incidents, requests, and browse knowledge articles.\par
+{\pntext\f4\'B7\tab}HR Employees can access HR services, like leave requests or HR case management.\par
+{\pntext\f4\'B7\tab}Use the Service Catalog to limit available services based on the user\rquote s department, role, or access level.\par
+{\pntext\f4\'B7\tab}Navigate to Service Portal > Pages to design the user interface and create customized widgets for different roles.\par
+{\pntext\f4\'B7\tab}Best Practice: Ensure a streamlined, user-friendly portal where users can easily access services relevant to them.\par
+
+\pard\sa200\sl276\slmult1\f3 8. Implement Knowledge Management for Role-Based Access\par
+\f0 Step 8: Configure Knowledge Management to ensure users only have access to articles that are relevant to their role.\par
+Solution:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Knowledge Base Permissions: Set up knowledge bases that restrict access to articles based on roles. For example, HR knowledge might only be available to HR agents or employees in the HR department.\par
+{\pntext\f4\'B7\tab}Use categories and ACLs to further segment access to knowledge articles.\par
+{\pntext\f4\'B7\tab}Navigate to Knowledge Management > Knowledge Bases to set up and manage these permissions.\par
+{\pntext\f4\'B7\tab}Best Practice: Organize knowledge articles into categories relevant to specific roles, and limit access to sensitive or internal knowledge.\par
+
+\pard\sa200\sl276\slmult1\f3 9. Apply Contextual Menus and Actions for Custom Workflow\f0\par
+Step 9: Implement contextual menus and actions that adapt based on the user's context, role, or task at hand.\par
+Solution:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Define contextual actions that will appear based on a record\rquote s state. For example, a Service Desk Agent may see an "Assign" button for incidents, while a Manager might see additional buttons like "Escalate" or "Close".\par
+{\pntext\f4\'B7\tab}Use UI Actions to define what actions appear based on the user's role or task status.\par
+{\pntext\f4\'B7\tab}Best Practice: Provide users with the most relevant options to complete their tasks efficiently, without overwhelming them with irrelevant actions.\par
+
+\pard\sa200\sl276\slmult1\f2\fs36 Testing:\par
+\f3\fs22 1. Role-Based Access Control (RBAC)\par
+\f0 Overview: ServiceNow uses Roles to control access to different parts of the platform. These roles can be tailored for testing scenarios by assigning users or groups specific roles that mirror the permissions they would have in the production environment.\par
+Implementation:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Define roles: Create roles like admin, developer, tester, or custom roles specific to your application.\par
+{\pntext\f4\'B7\tab}Assign roles to users: For testing, assign roles to test users to ensure they can access the correct features and data.\par
+{\pntext\f4\'B7\tab}Test different roles: Simulate different user experiences by logging in with different roles to ensure appropriate permissions are in place.\par
+
+\pard\sa200\sl276\slmult1\f3 2. Scoped Applications for Testing\par
+\f0 Overview: In ServiceNow, scoped applications allow you to limit access to specific features and data within an application. For testing, this allows testers to only interact with a predefined set of functionalities.\par
+Implementation:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Create scoped applications: Define a scope for testing that isolates the functionality being tested. This ensures testers can only see the features relevant to their role or the test case.\par
+{\pntext\f4\'B7\tab}Assign access to testers: Grant users access to the scoped application based on their testing requirements. Testers should only be able to interact with the scoped features they are responsible for.\par
+
+\pard\sa200\sl276\slmult1\f3 3. Access Control Lists (ACLs)\par
+\f0 Overview: Access Control Lists (ACLs) define who can access a particular resource (e.g., tables, records, or fields) in ServiceNow. ACLs ensure the right level of access is granted based on the user\rquote s roles, groups, or other conditions.\par
+Implementation:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Customize ACLs for testing: Configure ACLs based on the roles and access levels required for testing. For example, limit access to sensitive data to simulate realistic scenarios without exposing unnecessary data during tests.\par
+{\pntext\f4\'B7\tab}Test ACL scenarios: Ensure the correct users can access what they need, and unauthorized users are blocked from accessing restricted data.\par
+
+\pard\sa200\sl276\slmult1\f3 4. User Criteria for Targeted Access\par
+\f0 Overview: ServiceNow allows for User Criteria to define the conditions under which specific users or groups can access certain parts of the platform, such as knowledge articles or catalog items. This can be useful when testing user interactions with specific content.\par
+Implementation:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Create user criteria for testing: Set up user criteria that defines who can access specific records, catalog items, or workflows during testing.\par
+{\pntext\f4\'B7\tab}Test user experiences: Simulate users with different criteria to test the content visibility and functionality based on tailored access.\par
+
+\pard\sa200\sl276\slmult1\f3 5. User Experience Customization\f0\par
+Overview: For testing tailored user experiences, it\rquote s essential to adapt the ServiceNow interface and features according to user roles and access levels. This ensures that the application is tested in real-world conditions and can adapt based on the user's profile.\par
+Implementation:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Service Portal Access: Customize the Service Portal for different roles so testers can interact with a version of the portal that mirrors real use cases. Provide role-based access to different widgets and catalog items.\par
+{\pntext\f4\'B7\tab}Navigation Menus and Views: Adjust the navigation menus and views based on the user\rquote s role and the features they need access to. For example, a developer may have more technical options visible, while a service desk agent may see fewer options.\par
+
+\pard\sa200\sl276\slmult1\f3 6. Automated Testing with Tailored Access\par
+\f0 Overview: Automated testing tools like ATF (Automated Test Framework) in ServiceNow can be used to simulate specific user roles and test tailored access scenarios in a consistent and repeatable manner.\par
+Implementation:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Create test suites with specific access levels: Use ATF to automate tests that validate whether the tailored application access settings work correctly for different roles or scenarios.\par
+{\pntext\f4\'B7\tab}Ensure comprehensive testing: Automate tests that check the expected access and behavior for users with different roles and permissions, including data visibility and interaction workflows.\par
+
+\pard\sa200\sl276\slmult1\f3 7. Audit Trails for Access Control\par
+\f0 Overview: When testing access control, it\rquote s important to have an audit trail of who accessed what and when. This ensures that any misconfigurations or security breaches can be identified quickly during testing.\par
+Implementation:\par
+Enable auditing: Enable auditing for critical records, workflows, and access controls to track user activity during testing.\par
+Review logs: After testing, review audit logs to verify that users had access only to the areas they should, and no unauthorized actions were taken.\par
+\f3 8. Testing Permissions & Data Sensitivity\par
+\f0 Overview: In ServiceNow testing, it\rquote s essential to ensure that users with different access levels cannot view sensitive data or perform unauthorized actions.\par
+Implementation:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Data segregation: Test the separation of data based on user roles. Ensure that sensitive data, such as HR or financial data, is only accessible to authorized users.\par
+{\pntext\f4\'B7\tab}Test data access scenarios: Create test cases that simulate both authorized and unauthorized access to ensure proper access control.\par
+{\pntext\f4\'B7\tab}Benefits of Tailored Access in Testing:\par
+{\pntext\f4\'B7\tab}Realistic Testing: By using tailored access, testing closely mirrors real-world use, ensuring a more accurate reflection of how users will interact with the system.\f2\fs36\par
+
+\pard\sa200\sl276\slmult1 Conclusion:\par
+\f0\fs22                           Tailored application access in ServiceNow is essential for creating a secure, efficient, and user-centric testing environment. By leveraging role-based access control (RBAC), scoped applications, access control lists (ACLs), and user criteria, organizations can ensure that testers experience the platform in ways that align with real-world user needs and behaviors. This customization of access not only improves the accuracy and relevance of testing scenarios but also strengthens security by preventing unauthorized access to sensitive data.\par
+\f3 Achievements:\par
+                  \f0 By designing and testing tailored access permissions, organizations can deliver a more robust ServiceNow platform that functions as expected for different user types, ensuring a seamless and secure experience for both users and administrators. This approach not only enhances the overall user experience but also optimizes efficiency and data security in production environments.\par
+\par
+\par
+}
+ 
